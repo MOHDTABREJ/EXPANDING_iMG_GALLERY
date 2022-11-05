@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pannel active " style="background-image:url(https://source.unsplash.com/900x900/?girl) ;">
+            <h3>lets enjoy this pain</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/500x500/?hard) ;">
+            <h3>wanna something intresting</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?beautiful) ;">
+            <h3>isnt this coool day</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?princess) ;">
+            <h3>playing with these things</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?action) ;">
+            <h3>this is called the bla bla</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?adventure) ;">
+            <h3>whats funny</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?cute) ;">
+            <h3>legends play with mind</h3>
+        </div>
+        <div class="pannel" style="background-image:url(https://source.unsplash.com/400x500/?game) ;">
+            <h3>keep this up </h3>
+        </div>
+    </div>
+
+
+
+    <script>
+        const panels = document.querySelectorAll(".pannel");
+
+        panels.forEach((pannel) => {
+            pannel.addEventListener("click", () => {
+                removeActiveClasses();
+                pannel.classList.add("active");
+            });
+        });
+
+        const removeActiveClasses = () => {
+            panels.forEach((pannel) => {
+                pannel.classList.remove("active");
+            });
+        };
+    </script>
+</body>
+
+</html>
